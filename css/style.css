@@ -66,23 +66,92 @@ main {
   background-image: url("../images/banner_background.jpg");
   background-size: cover;
   background-position: top center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 
 main div.container {
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  width: 100%;
+  height: 55px;
+  background-color: var(--oranje);
+  border: none;
+  outline: none;
+  margin-top: auto;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--lightgrijs);
+}
+
+form div#form-title {
+  height: 50px;
+  background-color: var(--lightgrijs);
+  color: var(--zwart);
+  padding: 15px 50px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+}
+
+form div#form-input {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form input {
+  margin-top: 40px;
+  border: none;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--lightgrijs);
+  padding: 5px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+form input::placeholder {
+  color: var(--donkergrijs);
+  opacity: 0.6;
+}
+
+form input:first-child {
+  margin-top: 0px;
 }
 
 main img {
-  /* margin-top: 110px; */
-  margin-bottom: 25px;
+  display: block;
+  width: 120px;
+  height: auto;
+  margin-top: 100px;
 }
 
 main h1 {
-  width: 42%;
+  width: 45%;
   text-transform: uppercase;
   font-size: 36px;
   font-family: Raleway;
@@ -98,6 +167,7 @@ main div#lijn {
   width: 65px;
   height: 2px;
   background-color: var(--wit);
+  /* margin-top: 17px; */
 }
 
 main p {
@@ -107,8 +177,8 @@ main p {
   color: var(--grijs);
   font-size: 16px;
   line-height: 23px;
-  margin-top: 80px;
-  margin-bottom: 35px;
+  /* margin-top: 80px;
+  margin-bottom: 35px; */
 }
 
 main a {
@@ -121,9 +191,7 @@ main a {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 15px;
-  position: absolute;
-  left: 0;
-  top: 100%;
+  margin-bottom: 130px;
 }
 
 footer {
